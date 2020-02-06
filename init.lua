@@ -236,7 +236,7 @@ local search = function(user, str)
 
 	table.sort(found)
 	send(user, "Found usernames with shadow mute records: " .. table.concat(found, " "))
-	send(user, "For a total of " .. count .. "entries.")
+	send(user, "For a total of " .. count .. " entries.")
 end
 minetest.register_chatcommand("shadowmute_query", {
 	params = "<pattern>",
