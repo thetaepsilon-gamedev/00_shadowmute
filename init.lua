@@ -220,7 +220,7 @@ local search = function(user, str)
 	local count = 0
 	local found = {}
 
-	for name, details in muted do
+	for name, details in pairs(muted) do
 		-- note we need pcall because there's not currently a way to pre-compile a pattern,
 		-- so we have to catch errors on the fly.
 		local success, result = pcall(find, name, str)
