@@ -242,7 +242,7 @@ local search = function(user, str)
 		table.concat(found, " "))
 	send(user, "For a total of " .. count .. " entries.")
 end
-minetest.register_chatcommand("shadowmute_query", {
+minetest.register_chatcommand("shadowmute_find", {
 	params = "<pattern>",
 	description = "Queries for shadow muted players whose names match <pattern> as per lua's string.find().",
 	privs = {shadowmute = true},
